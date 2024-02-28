@@ -491,11 +491,19 @@ height: 207.25 px;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .container-filters-with-title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
     .hebergements-and-populaires {
+        display: flex;
         flex-direction: column;
     }
 
-    .hebergements {
+    #hebergement-section {
         width: 100%;
     }
 
