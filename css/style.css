@@ -57,6 +57,64 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/****** Header et navigation ***********/ 
+
+header{ 
+    width: 100%;
+    max-width: 1440px;
+    padding-right: 50px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 79px;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-top: 20px;
+      
+}
+.nav-container{
+    position: relative;
+    top: 0px;
+    left: 0px;  
+    
+}
+.nav-lien{ 
+    position: relative;
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 400;
+}
+.nav-lien-hebergement{
+    display: flex;
+    margin-right: 68px;
+}
+
+.nav-hebergement-activité{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    gap: 68px;
+}
+.nav-lien::before{
+    content: ''; /* Contenu vide */
+    position: absolute; /* Position absolue par rapport au lien */
+    top: -20px; /* Position au-dessus du lien */
+    left: 0; /* Position sur toute la largeur du lien */
+    width: 100%; /* Largeur de la barre égale à la largeur du lien */
+    height: 2px; /* Hauteur de la barre */
+    background-color: #0065FC; /* Couleur de la barre */
+    transition: width 0.3s; /* Transition pour un effet d'animation */
+    opacity: 0;
+}
+.nav-lien:hover::before {
+    width: 100%; /* Largeur de la barre lors du survol */
+    opacity: 1;
+}
+.nav-logo, .nav-hebergement-activité {
+    flex: 1; /* Les éléments enfants occupent tout l'espace disponible */
+}
 
 /******* Titre + barre de recherche + bouton filtre + information*********/
 
