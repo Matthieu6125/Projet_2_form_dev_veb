@@ -41,6 +41,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
 }
 
 .card {
@@ -190,7 +191,7 @@ input[type="text"] {
     padding: 15px 16px 15px 16px;
     height: auto;
   }
-.button-search {
+.button-search-rechercher {
     margin-left: 0px; 
     display: flex;
     border-top-right-radius: 15px;
@@ -202,10 +203,15 @@ input[type="text"] {
     background-color: #0065FC;
     height: auto;
   }
-  .icon-search-button{
+  .button-search-icon{ 
     display: none;
     background-color: #F2F2F2;
   }
+.fa-magnifying-glass{
+    color: #F2F2F2;
+    font-size: 17px;
+}
+ 
 .icon-search-container{
     display: flex;
     align-items: center;
@@ -247,14 +253,25 @@ input[type="text"] {
     height: 50px;
     display: flex;
     align-items: center;
-}
-.text-button-filters{
     font-weight: 700;
     size: 17px;
     line-height: 19.96px;
 }
-.position-vector{
-    display: flex;
+
+ .fa-money-bill-wave{
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.fa-person{
+    margin-right: 10px;
+    font-size: 22px;
+}
+.fa-heart{
+    margin-right: 10px;
+    font-size: 22px;
+}
+.fa-fire{
     margin-right: 10px;
     font-size: 22px;
 }
@@ -570,7 +587,11 @@ header{
     justify-content: center;
     width: 100%;
     padding: 0px;
+    padding-top: 30px;
     align-items: center;
+}
+.nav-logo{
+    padding-bottom: 30px;
 }
 .container-hebergement-activite{
     width: 100%;
@@ -618,13 +639,21 @@ header{
     margin-top: 30px;
 }
 /**** Barre de recherche***/
-.text-search-button{
+
+  .button-search-rechercher {
     display: none;
-}
-.icon-search-button{
+  }
+  .button-search-icon{ 
     display: flex;
-    background-color: #F2F2F2;
-    
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    padding: 15px 16px 15px 16px;
+    margin-left: -15px;
   }
 .input-search-container{
     width: 100%;
@@ -668,6 +697,7 @@ input[type="text"]{
 }
 .button-filters{
     width: 100%;
+    font-size: 14px;
 }
 .button1{
     grid-column: 1 / 2; 
@@ -710,6 +740,12 @@ input[type="text"]{
     flex-direction: column;
     width: 100%;
 }
+.populaires-cards .card-title {
+    font-size: 16px;
+}
+.populaires-cards .card-subtitle {
+    font-size: 14px;
+}
 .card{
     width: auto;
 }
@@ -732,9 +768,6 @@ input[type="text"]{
 }
 .hebergements-card{
     width: 100%;
-}
-.afficher-plus{
-    display: none;
 }
 
 /**** Activité ****/
