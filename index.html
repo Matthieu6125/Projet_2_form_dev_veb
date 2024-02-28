@@ -10,17 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body> 
+<body>
     <header>
         <nav class="nav-container">
                 <div class="nav">
                     <div class="nav-container-logo">
                         <div class="nav-logo">
-                            <a href="#"><img src="images/logo/Booki@3x.png" width="61.09px" height="19px"></a>
+                            <a href="#"><img src="images/logo/Booki@3x.png" width="61" height="19" alt="logo Booki"></a>
                         </div>
                     </div>
                     <div class="container-hebergement-activite">
@@ -51,11 +51,9 @@
 
                         <div class="input-search-container">
                             <form class="input-search">  
-                                <input type="text" value="Marseille, France" />
-                                <button type="submit" class="button-search">
-                                    <div class="text-search-button">Rechercher</div>
-                                    <div class="icon-search-button"><i class="fa-solid fa-magnifying-glass"></i></div>
-                                </button> 
+                                <input type="text" placeholder="Marseille, France" >
+                                <button type="submit" class="button-search-rechercher">Rechercher</button>
+                                <button type="submit" class="button-search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
                               </form> 
                         </div>
                     </div>
@@ -65,10 +63,10 @@
                     <div class="container-filters-with-title">
                         <div class="filters-text"><h3>Filtres</h3></div>
                         <div class="container-filters">
-                            <div class="filters"><button class="button-filters button1"><div class="position-vector"><i class="fa-solid fa-money-bill-wave"></i></div><div class="text-button-filters">Economique</div></button></div>
-                            <div class="filters"><button class="button-filters button2"><div class="position-vector"><i class="fa-solid fa-person"></i></div><div class="text-button-filters">Familial</div></button></div>
-                            <div class="filters"><button class="button-filters button3"><div class="position-vector"><i class="fa-solid fa-heart"></i></div><div class="text-button-filters">Romantique</div></button></div>
-                            <div class="filters"><button class="button-filters button4"><div class="position-vector"><i class="fa-solid fa-fire"></i></div><div class="text-button-filters">Nos Pépites</div></button></div> 
+                            <div class="filters"><button class="button-filters button1"><i class="fa-solid fa-money-bill-wave"></i>Economique</button></div>
+                            <div class="filters"><button class="button-filters button2"><i class="fa-solid fa-person"></i>Familial</button></div>
+                            <div class="filters"><button class="button-filters button3"><i class="fa-solid fa-heart"></i>Romantique</button></div>
+                            <div class="filters"><button class="button-filters button4"><i class="fa-solid fa-fire"></i>Nos Pépites</button></div> 
                         </div>
                     </div>
                 
@@ -79,8 +77,8 @@
                     </div>
                     <p class="paragraph-info">Plus de 500 logements disponibles dans cette ville</p> 
                 </div>
-            </div> 
-            <div class="hebergements-and-populaires">
+            </div>  
+            <div class="hebergements-and-populaires" id="hebergements">
                 <section id="hebergement-section">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
@@ -245,7 +243,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -293,7 +291,7 @@
                         <a class="activity-card" href="#">
                             
                             <div> 
-                                <img class="activity-img" src="images/activites/reno-laithienne.jpg" >
+                                <img class="activity-img" src="images/activites/reno-laithienne.jpg" alt="Photo du vieux port">
                             </div>
                             <div class="card-activity-txt-container">
                                 <div class="card-txt">
@@ -306,7 +304,7 @@
                         <a class="activity-card" href="#">
                             
                             <div> 
-                                <img class="activity-img" src="images/activites/paul-hermann.jpg" >
+                                <img class="activity-img" src="images/activites/paul-hermann.jpg" alt="photo du fort de pomègues">
                             </div>
                             <div class="card-activity-txt-container">
                                 <div class="card-txt">
@@ -318,7 +316,7 @@
                     <div class="Activity-in-Marseille">
                         <a class="activity-card" href="#">
                             <div> 
-                                <img class="activity-img" src="images/activites/kilyan-sockalingum.jpg"  >
+                                <img class="activity-img" src="images/activites/kilyan-sockalingum.jpg"  alt=" Photo du parc National des Calanques">
                             </div>
                             
                             <div class="card-activity-txt-container">
@@ -331,7 +329,7 @@
                     <div class="Activity-in-Marseille">
                         <a class="activity-card" href="#">
                             <div> 
-                                <img class="activity-img" src="images/activites/florian-wehde.jpg"  >
+                                <img class="activity-img" src="images/activites/florian-wehde.jpg" alt="photo de notre dame de la garde" >
                             </div>
                             <div class="card-activity-txt-container">
                                 <div class="card-txt">
@@ -340,7 +338,6 @@
                             </div>
                         </a>
                     </div>
-
                 </div>
             </div>
         </main>
@@ -367,6 +364,7 @@
             </div>
         </footer>
     </div>
+   
 </body>
 
 </html>
