@@ -17,27 +17,26 @@
 
 h1, h2, h3, p, div, img{
     margin: 0px;
-}
+}  /**** Reinitialise les marges par defaut des navigateurs ****/
 
 body {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     margin: auto;
-    align-items: center;
+    align-items: center; /*** centre le body sur la page ***/
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;  
+    box-sizing: border-box;  /*** inclu les bordures dans le remplisage ****/
       
 }
 
 a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none;  /*** supprime le soulignement du lien ***/
 }
 
 .section-title {
@@ -54,12 +53,12 @@ a {
 }
 
 .card img {
-    object-fit: cover;
+    object-fit: cover;  /*** rempli entièrement le conteneur en gardant les proportions de l'image ***/
 }
 
 .card-title {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 16px;  /*** taille du caractère ***/
+    font-weight: 700;  /*** epaisseur du caractère ***/
 }
 
 .euro {
@@ -114,19 +113,17 @@ header{
     gap: 68px;
 }
 .nav-lien::before{
-    content: ''; /* Contenu vide */
+    content: ''; /* Contenu vide  car on veux pas rajouter d'autre élément qu'une barre*/
     position: absolute; /* Position absolue par rapport au lien */
     top: -20px; /* Position au-dessus du lien */
     left: 0; /* Position sur toute la largeur du lien */
     width: 100%; /* Largeur de la barre égale à la largeur du lien */
     height: 2px; /* Hauteur de la barre */
-    background-color: #0065FC; /* Couleur de la barre */
-    transition: width 0.3s; /* Transition pour un effet d'animation */
-    opacity: 0;
+    background-color: #0065FC; 
+    opacity: 0; /* créer une barre invisible */
 }
 .nav-lien:hover::before {
-    width: 100%; /* Largeur de la barre lors du survol */
-    opacity: 1;
+    opacity: 1; /* rends visible la barre */
 }
 .nav-logo, .nav-hebergement-activité {
     flex: 1; /* Les éléments enfants occupent tout l'espace disponible */
@@ -160,16 +157,16 @@ header{
 
 .search{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  /* dispose le conteneur search en ligne */
     height: 49px;
-    margin-bottom: 17.5px;
+    margin-bottom: 17.5px;  /* marge avec l'élément suivant */
     margin-top: 17.5px;
 }
 .fa-location-dot{
     color: black;
     position: relative;
-    left: auto;
-    top:auto;
+    left: auto;  /*centre horizontalement */
+    top:auto;   /* centre verticalement */
 }
 .input-search{
     display: flex;
@@ -183,7 +180,8 @@ header{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     display: flex;
-    align-items: center;
+    align-items: center;  /* centre suivant l'axe horizontal */
+    justify-content: center;
 }
 input[type="text"] {
      
@@ -191,15 +189,15 @@ input[type="text"] {
     display: flex;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    border-left: 0px;
-    border-right: 0px;
-    text-align: center;
+    border-left: 0px;  /* colle a l'élément de gauche */
+    border-right: 0px; /* colle a l'élément de droite */
+    text-align: center;  /* centre suivant l'axe horizontal */
     border-color: #D9D9D9;
     padding: 15px 16px 15px 16px;
     height: auto;
   }
 
-  ::placeholder {
+  ::placeholder {  /** texte dans le input **/
     font-weight: 700;
     font-size: 18px;
     color: black;
@@ -233,19 +231,14 @@ input[type="text"] {
     display: flex;
     align-items: center;
 }
-.icon-position{
-    position: relative;
-    left: 18px;
-    width: 14px;
-    height: 18px;
-}
+
 
 
 /***** Filtres*****/
 
 .container-filters-with-title{
     display: flex;
-    align-items: center;
+    align-items: center;  /* permet d'aligner "filtre" au bouton */
     margin-top: 17.5px;
     margin-bottom: 17.5px;      
 }
@@ -274,7 +267,9 @@ input[type="text"] {
     font-size: 17px;
     line-height: 19.96px;
 }
-
+.button-filters:hover {
+    background-color: #DEEBFF;
+}
  .fa-money-bill-wave{
     margin-right: 10px;
     font-size: 22px;
@@ -293,38 +288,31 @@ input[type="text"] {
     font-size: 22px;
 }
 
-.button-filters:hover {
-    background-color: #DEEBFF;
-}
 
 /**** Information *****/
 
 
-.paragraph-info{
-    margin: 0px;               /***** a voir si ça peut etre supprimer sans incidence******/
-}
 .paragraph-info-container{
     display: flex;
-    align-items: center;
+    align-items: center;  /* aligne le texte et la fa icon */
     margin-top: 17.5px;
 }
 .info-icon-container{
     height: 24px;
     width: 24px;
-    border-radius: 50%;
+    border-radius: 50%;  /* créer un cercle */
     border: solid 1px;
     background-color: #ffffff;
     display: flex;
     border-color: #D9D9D9;
     margin-right: 10px;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  /* centre l'icon dans le cercle */
+    align-items: center;   /* centre l'icon dans le cercle */
 }
 .fa-info-taille{
     display: flex;
-    width: 4px;
-    height: 10px;
-font-size: 10px;}
+    font-size: 10px;  /* taille de l'icon */
+}
 
 
 /****** Hebergements And Populaires ***********/
@@ -332,8 +320,8 @@ font-size: 10px;}
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: space-between;         /* aligne les elements sur tout l'espace en colant sur le coté */
+    align-content: space-between;           
     margin-top: 35px;
 }
 
@@ -368,9 +356,8 @@ padding-bottom: 15px;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    
     object-fit: cover;
-    height: 114px;
+    height: 114px;    
 }
 .container-hebergements-card{
     display: grid;
@@ -527,7 +514,7 @@ padding-bottom: 15px;
     width: 33.33%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start;  /* aligne en commançant a gauche */
     padding: 20px;
 }
 .text-footer{
@@ -536,7 +523,7 @@ padding-bottom: 15px;
     font-size: 16px;
     font-weight: 400;
     margin: 0px;
-    align-items: flex-start;
+    align-items: flex-start;  /* aligne en commançant en haut du container */
 }
 
 .text-footer-title{
@@ -561,7 +548,7 @@ padding-bottom: 15px;
 
     .hebergements-and-populaires {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;  /* passe hebergement section et popular section l'une en dessous de l'autre */
     }
 
     #hebergement-section {
@@ -575,7 +562,7 @@ padding-bottom: 15px;
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        flex-direction: row;   /* passe de colone a ligne */
         justify-content: space-between;
     }
 
@@ -613,7 +600,7 @@ header{
     /*** Navigation **/
 .nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  /* passe de ligne a colonne */
     justify-content: center;
     width: 100%;
     padding: 0px;
@@ -637,20 +624,20 @@ header{
     width: 100%;
 }
 .nav-lien{
-    width: 50%;
+    width: 50%;             /* passe la taille du lien a la moitié de l'écran */
     display: flex;
     justify-content: center;
 }
 .nav-lien::before{
-    content: ''; /* Contenu vide */
-    position: absolute; /* Position absolue par rapport au lien */
-    top: auto;
+    content: ''; 
+    position: absolute; 
+    top: auto;  /** supprime la valeur précédament appliquée */
     bottom: -20px; /* Position au-dessous du lien */
     left: 0; /* Position sur toute la largeur du lien */
     width: 100%; /* Largeur de la barre égale à la largeur du lien */
     height: 2px; /* Hauteur de la barre */
     background-color: #F2F2F2; /* Couleur de la barre */
-    opacity: 1;
+    opacity: 1;  /** couleur du lien avant click **/
 }
 .nav-lien:hover::before {
     width: 100%; /* Largeur de la barre lors du survol */
@@ -671,7 +658,7 @@ header{
 /**** Barre de recherche***/
 
   .button-search-rechercher {
-    display: none;
+    display: none;    /* fait disparraitre le bouton rechercher */
   }
   .button-search-icon{ 
     display: flex;
@@ -716,7 +703,7 @@ input[type="text"]{
     margin: 0px;
     
 }
-.container-filters{
+.container-filters{   /* passe les boutons de flex à grid */
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 50px 50px; 
@@ -748,7 +735,7 @@ input[type="text"]{
 /**** hebergements-and-populaires ******/
 
 .hebergements-and-populaires{
-    flex-direction: column-reverse;
+    flex-direction: column-reverse;   /* change l'odre de la l'affichage hebergement et popular section */
     width: 100%;
 }
 
@@ -765,6 +752,9 @@ input[type="text"]{
     flex-direction: column;
     width: 100%;
 }
+.populaires-cards .card{
+    margin-top: 15px;
+}
 .populaires-cards .card-title {
     font-size: 16px;
 }
@@ -772,7 +762,7 @@ input[type="text"]{
     font-size: 14px;
 }
 .card{
-    width: auto;
+    width: auto;        /* prends tout l'espace disponible */
 }
 .populaires-cards a {
     width: auto;
