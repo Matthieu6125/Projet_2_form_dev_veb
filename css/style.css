@@ -87,13 +87,10 @@ header{
     align-items: flex-start;
     padding-left: 50px;
     padding-top: 20px;
-      
-}
-.nav-container{
     position: relative;
     top: 0px;
     left: 0px;  
-    
+      
 }
 .nav-lien{ 
     position: relative;
