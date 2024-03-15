@@ -335,23 +335,25 @@ input[type="text"] {
 }
 .hebergements-card {
 height: auto;
-padding-bottom: 15px;
 }
 .hebergements-card .card{ 
     height: 100%;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    padding-bottom: 15px;
+    gap: 4px;
 }
 .card-rating{
-    height: auto;
+    height: 13.5px;
 }
 .hebergements-card-img {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
-    height: 114px;    
+    height: 114px;  
+    margin-bottom: 5px;  
 }
 .container-hebergements-card{
     display: grid;
